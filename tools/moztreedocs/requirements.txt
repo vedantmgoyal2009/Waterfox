@@ -35,9 +35,9 @@ botocore==1.18.6 \
     #   -r requirements.in
     #   boto3
     #   s3transfer
-certifi==2020.6.20 \
-    --hash=sha256:5930595817496dd21bb8dc35dad090f1c2cd0adfaf21204bf6732ca5d8ee34d3 \
-    --hash=sha256:8fc0819f1f30ba15bdb34cceffb9ef04d99f420f68eb75d901e9560b8749fc41
+certifi==2022.12.7 \
+    --hash=sha256:35824b4c3a97115964b408844d64aa14db1cc518f6562e8d7261699d1350a9e3 \
+    --hash=sha256:4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18
     # via
     #   -r requirements.in
     #   requests
@@ -66,16 +66,16 @@ docutils==0.16 \
     #   sphinx
     #   sphinx-js
     #   sphinx-panels
-fluent.pygments==1.0 \
+fluent-pygments==1.0 \
     --hash=sha256:625c87a8a2362ef304146b161d359dcf652bed2a1ae4869b5607b8e06d117d97 \
     --hash=sha256:b44758f74f87e1aa9d78d8f53363962639c5bf99d88cf3e407d046b5249ec27f
     # via -r requirements.in
-fluent.syntax==0.18.1 \
+fluent-syntax==0.18.1 \
     --hash=sha256:0e63679fa4f1b3042565220a5127b4bab842424f07d6a13c12299e3b3835486a \
     --hash=sha256:3a55f5e605d1b029a65cc8b6492c86ec4608e15447e73db1495de11fd46c104f
     # via
     #   -r requirements.in
-    #   fluent.pygments
+    #   fluent-pygments
 idna==2.10 \
     --hash=sha256:b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6 \
     --hash=sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0
@@ -91,14 +91,7 @@ imagesize==1.2.0 \
 importlib-metadata==2.0.0 \
     --hash=sha256:77a540690e24b0305878c37ffd421785a6f7e53c8b5720d211b211de8d0e95da \
     --hash=sha256:cefa1a2f919b866c5beb7c9f7b0ebb4061f30a8a9bf16d609b000e2dfaceb9c3
-    # via
-    #   -r requirements.in
-    #   jsonschema
-    #   markdown
-importlib-resources==3.0.0 \
-    --hash=sha256:19f745a6eca188b490b1428c8d1d4a0d2368759f32370ea8fb89cad2ab1106c3 \
-    --hash=sha256:d028f66b66c0d5732dae86ba4276999855e162a749c92620a38c1d779ed138a7
-    # via sphinx-panels
+    # via -r requirements.in
 jinja2==2.11.2 \
     --hash=sha256:89aab215427ef59c34ad58735269eb58b1a5808103067f7bb9d5836c651b3bb0 \
     --hash=sha256:f0a4641d3cf955324a89c04f3d94663aa4d638abe8f733ecd3582848e1c37035
@@ -178,10 +171,6 @@ parsimonious==0.7.0 \
     # via
     #   -r requirements.in
     #   sphinx-js
-pyasn1-modules==0.2.8 \
-    --hash=sha256:905f84c712230b2c592c19470d3ca8d552de726050d1d1716282a1f6146be65e \
-    --hash=sha256:a50b808ffeb97cb3601dd25981f6b016cbb3d31fbf57a8b8a87428e6158d0c74
-    # via -r requirements.in
 pyasn1==0.4.8 \
     --hash=sha256:39c7e2ec30515947ff4e87fb6f456dfc6e84857d34be479c9d4a4ba4bf46aa5d \
     --hash=sha256:aef77c9fb94a3ac588e87841208bdec464471d9871bd5050a287cc9a475cd0ba
@@ -189,12 +178,16 @@ pyasn1==0.4.8 \
     #   -r requirements.in
     #   pyasn1-modules
     #   rsa
+pyasn1-modules==0.2.8 \
+    --hash=sha256:905f84c712230b2c592c19470d3ca8d552de726050d1d1716282a1f6146be65e \
+    --hash=sha256:a50b808ffeb97cb3601dd25981f6b016cbb3d31fbf57a8b8a87428e6158d0c74
+    # via -r requirements.in
 pygments==2.7.1 \
     --hash=sha256:307543fe65c0947b126e83dd5a61bd8acbd84abec11f43caebaf5534cbc17998 \
     --hash=sha256:926c3f319eda178d1bd90851e4317e6d8cdb5e292a3386aac9bd75eca29cf9c7
     # via
     #   -r requirements.in
-    #   fluent.pygments
+    #   fluent-pygments
     #   sphinx
 pyparsing==2.4.7 \
     --hash=sha256:c203ec8783bf771a155b207279b9bccb8dea02d8f0c9e5f8ead507bc3246ecc1 \
@@ -286,7 +279,7 @@ six==1.15.0 \
     --hash=sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced
     # via
     #   -r requirements.in
-    #   fluent.pygments
+    #   fluent-pygments
     #   jsonschema
     #   livereload
     #   packaging
@@ -300,6 +293,16 @@ snowballstemmer==2.0.0 \
     # via
     #   -r requirements.in
     #   sphinx
+sphinx==3.5.1 \
+    --hash=sha256:11d521e787d9372c289472513d807277caafb1684b33eb4f08f7574c405893a9 \
+    --hash=sha256:e90161222e4d80ce5fc811ace7c6787a226b4f5951545f7f42acf97277bfc35c
+    # via
+    #   -r requirements.in
+    #   recommonmark
+    #   sphinx-copybutton
+    #   sphinx-js
+    #   sphinx-panels
+    #   sphinx-rtd-theme
 sphinx-copybutton==0.3.1 \
     --hash=sha256:0e0461df394515284e3907e3f418a0c60ef6ab6c9a27a800c8552772d0a402a2 \
     --hash=sha256:5125c718e763596e6e52d92e15ee0d6f4800ad3817939be6dee51218870b3e3d
@@ -320,16 +323,6 @@ sphinx-rtd-theme==0.5.1 \
     --hash=sha256:eda689eda0c7301a80cf122dad28b1861e5605cbf455558f3775e1e8200e83a5 \
     --hash=sha256:fa6bebd5ab9a73da8e102509a86f3fcc36dec04a0b52ea80e5a033b2aba00113
     # via -r requirements.in
-sphinx==3.5.1 \
-    --hash=sha256:11d521e787d9372c289472513d807277caafb1684b33eb4f08f7574c405893a9 \
-    --hash=sha256:e90161222e4d80ce5fc811ace7c6787a226b4f5951545f7f42acf97277bfc35c
-    # via
-    #   -r requirements.in
-    #   recommonmark
-    #   sphinx-copybutton
-    #   sphinx-js
-    #   sphinx-panels
-    #   sphinx-rtd-theme
 sphinxcontrib-applehelp==1.0.2 \
     --hash=sha256:806111e5e962be97c29ec4c1e7fe277bfd19e9652fb1a4392105b43e01af885a \
     --hash=sha256:a072735ec80e7675e3f432fcae8610ecf509c5f1869d17e2eecff44389cdbc58
@@ -397,7 +390,6 @@ zipp==3.2.0 \
     # via
     #   -r requirements.in
     #   importlib-metadata
-    #   importlib-resources
 
 # WARNING: The following packages were not pinned, but pip requires them to be
 # pinned when the requirements file includes hashes. Consider using the --allow-unsafe flag.
