@@ -74,7 +74,7 @@ awscli==1.19.33 \
     --hash=sha256:473d1a653b05577440747d387778efbea8b5c05b88231dd215d74e36133c73c1 \
     --hash=sha256:d97316d781f3fb52702779a3e5ca8d5780eb253a957ee5c35542607b6014f737
     # via -r requirements.in
-backports.lzma==0.0.14 \
+backports-lzma==0.0.14 \
     --hash=sha256:16d8b68e4d3cd4e6c9ddb059850452946da3914c8a8e197a7f2b0954559f2df4
     # via mar
 botocore==1.20.33 \
@@ -83,9 +83,9 @@ botocore==1.20.33 \
     # via
     #   awscli
     #   s3transfer
-certifi==2020.12.5 \
-    --hash=sha256:1a4995114262bffbc2413b159f2a1a480c969de6e6eb13ee966d470af86af59c \
-    --hash=sha256:719a74fb9e33b9bd44cc7f3a8d94bc35e4049deebe19ba7d8e108280cfd59830
+certifi==2022.12.7 \
+    --hash=sha256:35824b4c3a97115964b408844d64aa14db1cc518f6562e8d7261699d1350a9e3 \
+    --hash=sha256:4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18
     # via requests
 cffi==1.14.5 \
     --hash=sha256:005a36f41773e148deac64b08f233873a4d0c18b053d37da83f6af4d9087b813 \
@@ -169,7 +169,7 @@ docutils==0.15.2 \
     --hash=sha256:9e4d7ecfc600058e07ba661411a2b7de2fd0fafa17d1a7f7361cd47b1175c827 \
     --hash=sha256:a2aeea129088da402665e92e0b25b04b073c04b2dce4ab65caaa38b7ce2e1a99
     # via awscli
-github3.py==2.0.0 \
+github3-py==2.0.0 \
     --hash=sha256:7e153e5dc559f27e4d15c91571a2d6e1522c9faa4406e188459d9731f0b98875 \
     --hash=sha256:8dd4ac612fd60cb277eaf6e2ce02f68dda54aba06870ca6fa2b28369bf39aa14
     # via scriptworker
@@ -197,7 +197,7 @@ jsonschema==3.2.0 \
 jwcrypto==0.8 \
     --hash=sha256:16e17faa4dce36551ade3a3ccb06236a61e5924ea1db163c9be9827acf935a82 \
     --hash=sha256:b7fee2635bbefdf145399392f5be26ad54161c8271c66b5fe107b4b452f06c24
-    # via github3.py
+    # via github3-py
 mar==3.1.0 \
     --hash=sha256:1939df482f2d3f6221405da00d6286d77d2dd60d372a0fd37532a8f00544f64f \
     --hash=sha256:5d2904a063f0da625e37515fa9eb340082e69fa1c00fdbeb82d28b7ff3c51e28
@@ -264,7 +264,7 @@ python-dateutil==2.8.1 \
     # via
     #   arrow
     #   botocore
-    #   github3.py
+    #   github3-py
 pyyaml==5.4.1 \
     --hash=sha256:08682f6b72c722394747bddaf0aa62277e02557c0fd1c42cb853016a38f8dedf \
     --hash=sha256:0f5f5786c0e09baddcd8b4b45f20a7b5d61a7e7e99846e3c799b05c7c53fa696 \
@@ -306,7 +306,7 @@ requests==2.25.1 \
     --hash=sha256:c210084e36a42ae6b9219e00e48287def368a26d03a048ddad7bfee44f75871e
     # via
     #   -r requirements.in
-    #   github3.py
+    #   github3-py
     #   taskcluster
 rsa==4.5 \
     --hash=sha256:35c5b5f6675ac02120036d97cf96f1fde4d49670543db2822ba5015e21a18032 \
@@ -336,16 +336,16 @@ slugid==2.0.0 \
     --hash=sha256:a950d98b72691178bdd4d6c52743c4a2aa039207cf7a97d71060a111ff9ba297 \
     --hash=sha256:aec8b0e01c4ad32e38e12d609eab3ec912fd129aaf6b2ded0199b56a5f8fd67c
     # via taskcluster
-taskcluster-urls==13.0.1 \
-    --hash=sha256:5e25e7e6818e8877178b175ff43d2e6548afad72694aa125f404a7329ece0973 \
-    --hash=sha256:b25e122ecec249c4299ac7b20b08db76e3e2025bdaeb699a9d444556de5fd367 \
-    --hash=sha256:f66dcbd6572a6216ab65949f0fa0b91f2df647918028436c384e6af5cd12ae2b
-    # via taskcluster
 taskcluster==39.2.0 \
     --hash=sha256:07dec0b12c80122498d772a242f92373d65731f133fb0d9aba5c2adf78475b13 \
     --hash=sha256:844d58207f7ccba73cce2413ff79ad83ef39e4095e0269fb82ff14fa9b1c3e2f \
     --hash=sha256:e5fe89c1f85b3caf141106053c1e98bcb930a629889e67acb2bd9aa92bd95182
     # via scriptworker
+taskcluster-urls==13.0.1 \
+    --hash=sha256:5e25e7e6818e8877178b175ff43d2e6548afad72694aa125f404a7329ece0973 \
+    --hash=sha256:b25e122ecec249c4299ac7b20b08db76e3e2025bdaeb699a9d444556de5fd367 \
+    --hash=sha256:f66dcbd6572a6216ab65949f0fa0b91f2df647918028436c384e6af5cd12ae2b
+    # via taskcluster
 typing-extensions==3.7.4.3 \
     --hash=sha256:7cb407020f00f7bfc3cb3e7881628838e69d8f3fcab2f64742a5e76b2f841918 \
     --hash=sha256:99d4073b617d30288f569d3f13d2bd7548c3a7e4c8de87db09a9d29bb3a4a60c \
@@ -354,7 +354,7 @@ typing-extensions==3.7.4.3 \
 uritemplate==3.0.1 \
     --hash=sha256:07620c3f3f8eed1f12600845892b0e036a2420acf513c53f7de0abd911a5894f \
     --hash=sha256:5af8ad10cec94f215e3f48112de2022e1d5a37ed427fbd88652fa908f2ab7cae
-    # via github3.py
+    # via github3-py
 urllib3==1.26.4 \
     --hash=sha256:2f4da4594db7e1e110a944bb1b551fdf4e6c136ad42e4234131391e21eb5b0df \
     --hash=sha256:e7b021f7241115872f92f43c6508082facffbd1c048e3c6e2bb9c2a157e28937
