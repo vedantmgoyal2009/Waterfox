@@ -99,7 +99,7 @@
     "husky": "4.3.8",
     "jpeg-js": "0.3.7",
     "mime": "2.5.2",
-    "minimist": "1.2.0",
+    "minimist": "1.2.6",
     "mocha": "8.4.0",
     "ncp": "2.0.0",
     "pixelmatch": "4.0.2",
