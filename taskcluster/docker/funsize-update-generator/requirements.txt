@@ -74,7 +74,7 @@ awscli==1.19.33 \
     --hash=sha256:473d1a653b05577440747d387778efbea8b5c05b88231dd215d74e36133c73c1 \
     --hash=sha256:d97316d781f3fb52702779a3e5ca8d5780eb253a957ee5c35542607b6014f737
     # via -r requirements.in
-backports.lzma==0.0.14 \
+backports-lzma==0.0.14 \
     --hash=sha256:16d8b68e4d3cd4e6c9ddb059850452946da3914c8a8e197a7f2b0954559f2df4
     # via mar
 botocore==1.20.33 \
@@ -143,19 +143,26 @@ colorama==0.4.3 \
 construct==2.10.61 \
     --hash=sha256:d75384a04cb36ae5417dd34ce230c392e6085d872ab8a99ebd756c34bac0dff5
     # via mar
-cryptography==3.4.6 \
-    --hash=sha256:066bc53f052dfeda2f2d7c195cf16fb3e5ff13e1b6b7415b468514b40b381a5b \
-    --hash=sha256:0923ba600d00718d63a3976f23cab19aef10c1765038945628cd9be047ad0336 \
-    --hash=sha256:2d32223e5b0ee02943f32b19245b61a62db83a882f0e76cc564e1cec60d48f87 \
-    --hash=sha256:4169a27b818de4a1860720108b55a2801f32b6ae79e7f99c00d79f2a2822eeb7 \
-    --hash=sha256:57ad77d32917bc55299b16d3b996ffa42a1c73c6cfa829b14043c561288d2799 \
-    --hash=sha256:5ecf2bcb34d17415e89b546dbb44e73080f747e504273e4d4987630493cded1b \
-    --hash=sha256:600cf9bfe75e96d965509a4c0b2b183f74a4fa6f5331dcb40fb7b77b7c2484df \
-    --hash=sha256:66b57a9ca4b3221d51b237094b0303843b914b7d5afd4349970bb26518e350b0 \
-    --hash=sha256:93cfe5b7ff006de13e1e89830810ecbd014791b042cbe5eec253be11ac2b28f3 \
-    --hash=sha256:9e98b452132963678e3ac6c73f7010fe53adf72209a32854d55690acac3f6724 \
-    --hash=sha256:df186fcbf86dc1ce56305becb8434e4b6b7504bc724b71ad7a3239e0c9d14ef2 \
-    --hash=sha256:fec7fb46b10da10d9e1d078d1ff8ed9e05ae14f431fdbd11145edd0550b9a964
+cryptography==41.0.0 \
+    --hash=sha256:0ddaee209d1cf1f180f1efa338a68c4621154de0afaef92b89486f5f96047c55 \
+    --hash=sha256:14754bcdae909d66ff24b7b5f166d69340ccc6cb15731670435efd5719294895 \
+    --hash=sha256:344c6de9f8bda3c425b3a41b319522ba3208551b70c2ae00099c205f0d9fd3be \
+    --hash=sha256:34d405ea69a8b34566ba3dfb0521379b210ea5d560fafedf9f800a9a94a41928 \
+    --hash=sha256:3680248309d340fda9611498a5319b0193a8dbdb73586a1acf8109d06f25b92d \
+    --hash=sha256:3c5ef25d060c80d6d9f7f9892e1d41bb1c79b78ce74805b8cb4aa373cb7d5ec8 \
+    --hash=sha256:4ab14d567f7bbe7f1cdff1c53d5324ed4d3fc8bd17c481b395db224fb405c237 \
+    --hash=sha256:5c1f7293c31ebc72163a9a0df246f890d65f66b4a40d9ec80081969ba8c78cc9 \
+    --hash=sha256:6b71f64beeea341c9b4f963b48ee3b62d62d57ba93eb120e1196b31dc1025e78 \
+    --hash=sha256:7d92f0248d38faa411d17f4107fc0bce0c42cae0b0ba5415505df72d751bf62d \
+    --hash=sha256:8362565b3835ceacf4dc8f3b56471a2289cf51ac80946f9087e66dc283a810e0 \
+    --hash=sha256:84a165379cb9d411d58ed739e4af3396e544eac190805a54ba2e0322feb55c46 \
+    --hash=sha256:88ff107f211ea696455ea8d911389f6d2b276aabf3231bf72c8853d22db755c5 \
+    --hash=sha256:9f65e842cb02550fac96536edb1d17f24c0a338fd84eaf582be25926e993dde4 \
+    --hash=sha256:a4fc68d1c5b951cfb72dfd54702afdbbf0fb7acdc9b7dc4301bbf2225a27714d \
+    --hash=sha256:b7f2f5c525a642cecad24ee8670443ba27ac1fab81bba4cc24c7b6b41f2d0c75 \
+    --hash=sha256:b846d59a8d5a9ba87e2c3d757ca019fa576793e8758174d3868aecb88d6fc8eb \
+    --hash=sha256:bf8fc66012ca857d62f6a347007e166ed59c0bc150cefa49f28376ebe7d992a2 \
+    --hash=sha256:f5d0bf9b252f30a31664b6f64432b4730bb7038339bd18b1fafe129cfc2be9be
     # via
     #   jwcrypto
     #   mar
@@ -169,7 +176,7 @@ docutils==0.15.2 \
     --hash=sha256:9e4d7ecfc600058e07ba661411a2b7de2fd0fafa17d1a7f7361cd47b1175c827 \
     --hash=sha256:a2aeea129088da402665e92e0b25b04b073c04b2dce4ab65caaa38b7ce2e1a99
     # via awscli
-github3.py==2.0.0 \
+github3-py==2.0.0 \
     --hash=sha256:7e153e5dc559f27e4d15c91571a2d6e1522c9faa4406e188459d9731f0b98875 \
     --hash=sha256:8dd4ac612fd60cb277eaf6e2ce02f68dda54aba06870ca6fa2b28369bf39aa14
     # via scriptworker
@@ -197,7 +204,7 @@ jsonschema==3.2.0 \
 jwcrypto==0.8 \
     --hash=sha256:16e17faa4dce36551ade3a3ccb06236a61e5924ea1db163c9be9827acf935a82 \
     --hash=sha256:b7fee2635bbefdf145399392f5be26ad54161c8271c66b5fe107b4b452f06c24
-    # via github3.py
+    # via github3-py
 mar==3.1.0 \
     --hash=sha256:1939df482f2d3f6221405da00d6286d77d2dd60d372a0fd37532a8f00544f64f \
     --hash=sha256:5d2904a063f0da625e37515fa9eb340082e69fa1c00fdbeb82d28b7ff3c51e28
@@ -264,7 +271,7 @@ python-dateutil==2.8.1 \
     # via
     #   arrow
     #   botocore
-    #   github3.py
+    #   github3-py
 pyyaml==5.4.1 \
     --hash=sha256:08682f6b72c722394747bddaf0aa62277e02557c0fd1c42cb853016a38f8dedf \
     --hash=sha256:0f5f5786c0e09baddcd8b4b45f20a7b5d61a7e7e99846e3c799b05c7c53fa696 \
@@ -306,7 +313,7 @@ requests==2.25.1 \
     --hash=sha256:c210084e36a42ae6b9219e00e48287def368a26d03a048ddad7bfee44f75871e
     # via
     #   -r requirements.in
-    #   github3.py
+    #   github3-py
     #   taskcluster
 rsa==4.5 \
     --hash=sha256:35c5b5f6675ac02120036d97cf96f1fde4d49670543db2822ba5015e21a18032 \
@@ -336,16 +343,16 @@ slugid==2.0.0 \
     --hash=sha256:a950d98b72691178bdd4d6c52743c4a2aa039207cf7a97d71060a111ff9ba297 \
     --hash=sha256:aec8b0e01c4ad32e38e12d609eab3ec912fd129aaf6b2ded0199b56a5f8fd67c
     # via taskcluster
-taskcluster-urls==13.0.1 \
-    --hash=sha256:5e25e7e6818e8877178b175ff43d2e6548afad72694aa125f404a7329ece0973 \
-    --hash=sha256:b25e122ecec249c4299ac7b20b08db76e3e2025bdaeb699a9d444556de5fd367 \
-    --hash=sha256:f66dcbd6572a6216ab65949f0fa0b91f2df647918028436c384e6af5cd12ae2b
-    # via taskcluster
 taskcluster==39.2.0 \
     --hash=sha256:07dec0b12c80122498d772a242f92373d65731f133fb0d9aba5c2adf78475b13 \
     --hash=sha256:844d58207f7ccba73cce2413ff79ad83ef39e4095e0269fb82ff14fa9b1c3e2f \
     --hash=sha256:e5fe89c1f85b3caf141106053c1e98bcb930a629889e67acb2bd9aa92bd95182
     # via scriptworker
+taskcluster-urls==13.0.1 \
+    --hash=sha256:5e25e7e6818e8877178b175ff43d2e6548afad72694aa125f404a7329ece0973 \
+    --hash=sha256:b25e122ecec249c4299ac7b20b08db76e3e2025bdaeb699a9d444556de5fd367 \
+    --hash=sha256:f66dcbd6572a6216ab65949f0fa0b91f2df647918028436c384e6af5cd12ae2b
+    # via taskcluster
 typing-extensions==3.7.4.3 \
     --hash=sha256:7cb407020f00f7bfc3cb3e7881628838e69d8f3fcab2f64742a5e76b2f841918 \
     --hash=sha256:99d4073b617d30288f569d3f13d2bd7548c3a7e4c8de87db09a9d29bb3a4a60c \
@@ -354,7 +361,7 @@ typing-extensions==3.7.4.3 \
 uritemplate==3.0.1 \
     --hash=sha256:07620c3f3f8eed1f12600845892b0e036a2420acf513c53f7de0abd911a5894f \
     --hash=sha256:5af8ad10cec94f215e3f48112de2022e1d5a37ed427fbd88652fa908f2ab7cae
-    # via github3.py
+    # via github3-py
 urllib3==1.26.4 \
     --hash=sha256:2f4da4594db7e1e110a944bb1b551fdf4e6c136ad42e4234131391e21eb5b0df \
     --hash=sha256:e7b021f7241115872f92f43c6508082facffbd1c048e3c6e2bb9c2a157e28937
